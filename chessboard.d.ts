@@ -40,8 +40,7 @@ interface Props {
   sparePieces?: boolean,
   squareStyles?: {[square in Square]?: CSSProperties},
   transitionDuration?: number,
-  width?: number,
-  undo?: boolean,
+  width?: number
 }
 
 export default class Chessboard extends Component<Props> {

@@ -6,7 +6,6 @@ import RandomVsRandomGame from './integrations/RandomVsRandomGame';
 import CustomizedBoard from './integrations/CustomizedBoard';
 import AllowDragFeature from './integrations/AllowDrag';
 import PrestoChangoExample from './integrations/PrestoChango';
-import UndoMove from './integrations/UndoMove';
 import SpareOnDrop from './integrations/SpareOnDrop';
 
 class Demo extends Component {
@@ -17,7 +16,6 @@ class Demo extends Component {
     showPlayRandomMoveEngine: false,
     showAllowDragFeature: false,
     showPrestoChango: false,
-    showUndoMove: false,
     showSpareOnDrop: false
   };
   render() {
@@ -33,7 +31,6 @@ class Demo extends Component {
                 showPlayRandomMoveEngine: false,
                 showAllowDragFeature: false,
                 showPrestoChango: false,
-                showUndoMove: false,
                 showSpareOnDrop: false
               })
             }
@@ -50,7 +47,6 @@ class Demo extends Component {
                 showPlayRandomMoveEngine: false,
                 showAllowDragFeature: false,
                 showPrestoChango: false,
-                showUndoMove: false,
                 showSpareOnDrop: false
               })
             }
@@ -70,7 +66,6 @@ class Demo extends Component {
                 showPlayRandomMoveEngine: false,
                 showAllowDragFeature: false,
                 showPrestoChango: false,
-                showUndoMove: false,
                 showSpareOnDrop: false
               })
             }
@@ -87,7 +82,6 @@ class Demo extends Component {
                 showPlayRandomMoveEngine: true,
                 showAllowDragFeature: false,
                 showPrestoChango: false,
-                showUndoMove: false,
                 showSpareOnDrop: false
               })
             }
@@ -104,7 +98,6 @@ class Demo extends Component {
                 showPlayRandomMoveEngine: false,
                 showAllowDragFeature: true,
                 showPrestoChango: false,
-                showUndoMove: false,
                 showSpareOnDrop: false
               })
             }
@@ -121,7 +114,6 @@ class Demo extends Component {
                 showPlayRandomMoveEngine: false,
                 showAllowDragFeature: false,
                 showPrestoChango: true,
-                showUndoMove: false,
                 showSpareOnDrop: false
               })
             }
@@ -141,24 +133,6 @@ class Demo extends Component {
                 showPlayRandomMoveEngine: false,
                 showAllowDragFeature: false,
                 showPrestoChango: false,
-                showUndoMove: true,
-                showSpareOnDrop: false
-              })
-            }
-            style={{ ...buttonStyle, ...{ backgroundColor: 'pink' } }}
-          >
-            Undo Move
-          </button>
-          <button
-            onClick={() =>
-              this.setState({
-                showCustomizedBoard: false,
-                showWithMoveValidation: false,
-                showRandomVsRandomGame: false,
-                showPlayRandomMoveEngine: false,
-                showAllowDragFeature: false,
-                showPrestoChango: false,
-                showUndoMove: false,
                 showSpareOnDrop: true
               })
             }
@@ -174,7 +148,6 @@ class Demo extends Component {
           {this.state.showPlayRandomMoveEngine && <PlayRandomMoveEngine />}
           {this.state.showAllowDragFeature && <AllowDragFeature />}
           {this.state.showPrestoChango && <PrestoChangoExample />}
-          {this.state.showUndoMove && <UndoMove />}
           {this.state.showSpareOnDrop && <SpareOnDrop />}
         </div>
       </div>

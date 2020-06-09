@@ -29,14 +29,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/willb335/chessboardjsx.git"
+    "url": "https://github.com/szpakowski/chessboardjsx"
   },
   "author": "William .J Bashelor <wbashelor@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/willb335/chessboardjsx/issues"
+    "url": "https://github.com/szpakowski/chessboardjsx/issues"
   },
-  "homepage": "https://github.com/willb335/chessboardjsx#readme",
+  "homepage": "https://github.com/szpakowski/chessboardjsx#readme",
   "dependencies": {
     "deep-diff": "1.0.1",
     "lodash.isequal": "4.5.0",
